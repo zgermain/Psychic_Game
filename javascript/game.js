@@ -109,9 +109,15 @@ function playgame(){
 document.onkeyup = function (event) {
 
     var letter = event.key.toLowerCase();
-        //check if input is made of letters
+    
+    //don't count letter if it has been guessed
+    if (letterGuesses.includes(letter)){
+        userInput = letter;
+        console.log('userInput: ' + userInput);
+    } 
+    //check if input is made of letters
         //and is only a single letter
-    if (letterCheck(letter) === true && letter.length === 1){
+    else if(letterCheck(letter) === true && letter.length === 1){
 
         userInput = letter;
         console.log('userInput: ' + userInput);

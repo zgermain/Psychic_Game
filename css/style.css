@@ -4,12 +4,18 @@ body{
 
 .container{
     background-color:#0b3954;
+    max-width: 800px;
+    min-height: 350px;
 }
 
 
 h1, h2, h4{
     color:#fefffe;
     text-align:center;
+}
+
+hr{
+    border-color:#fefffe8e;
 }
 
 .game-title{
@@ -21,7 +27,7 @@ h1, h2, h4{
 }
 
 /* .push{
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 } */
 
 p{
