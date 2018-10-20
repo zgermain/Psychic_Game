@@ -14,10 +14,9 @@ function letterCheck(inputtxt){
         return true;
     }
     else {
-
         return false;
-    }
-}
+    };
+};
 
 function pickRandomLetter(){
     randomLetter = letterArray[Math.floor(Math.random()*letterArray.length)];
@@ -57,6 +56,28 @@ function display(){
     document.getElementById("letterGuesses-div").textContent = letterGuesses;
 };
 
+// function windowColor(x){
+//     var elements;
+//     if (x === 8){
+//         document.getElementById("game-window").style.backgroundColor = "#E2E1B9";
+//     } else if (x === 7){
+//         document.getElementById("game-window").style.backgroundColor = "#D3D2C7";
+//     } else if (x === 6){
+//         document.getElementById("game-window").style.backgroundColor = "#D3C2CE";
+//     } else if (x === 5){
+//         document.getElementById("game-window").style.backgroundColor = "#E2AFDE";
+//     }else if (x === 4){
+//         document.getElementById("game-window").style.backgroundColor = "#F991CC";
+//     }else if (x === 3){
+//         document.getElementById("game-window").style.backgroundColor = "#D3C2CE";
+//     }else if (x === 2){
+//         document.getElementById("game-window").style.backgroundColor = "#D485B5";
+//     }else if (x === 1){
+//         document.getElementById("game-window").style.backgroundColor = "#A57B99";
+//     }
+
+// }
+
 //Game Cycle
 resetGame();
 display();
@@ -71,15 +92,16 @@ function playgame(){
         display();
     } else {
         //Wrong = guesses decrements and input is added to array
-        letterGuesses = letterGuesses + userInput;
+        letterGuesses.push(userInput);
         guesses--;
         checkLose();
         display();
+        
+        // windowColor(guesses);
+        
     };
     
 }
-
-
 
 
 
@@ -96,7 +118,6 @@ document.onkeyup = function (event) {
 
     };
 };
-
 
 
 //Console Variable Test Function
