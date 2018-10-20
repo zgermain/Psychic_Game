@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,22 +9,48 @@
     <link rel="stylesheet" href="css/reset.css">"
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <div class = "container">
 
-        <div class = "jumbotron" id = "game-window">
-            <h1>wins</h1>
-            <h1 id = "wins-div"></h1>
-            <h1>losses</h1>
-            <h1 id = "losses-div"></h1>
-            <h1>guesses</h1>
-            <h1 id = "guesses-div"></h1>
-            <h1>letters guesses so far</h1>
-            <h1 id = "letterGuesses-div">LetterGuesses</h1>
+    <div>
+        <h1 class = "game-title display-4">Psychic: Guess the Letter</h1>
+        <p class = "game-title" id = "sub-head">(press any letter on the keyboard)</h1>
 
+    </div>
+    <div class = "container rounded" id = "test">
+        
+        <div class = "row">
+                <div class = "col-md-4">
+                        <h1>wins</h1>
+                        <p id = "wins-div"></p>
+                </div>
+                <div class = "col-md-4">
+                        <h1>losses</h1>
+                        <p id = "losses-div"></p>
+                </div>
+                <div class = "col-md-4">
+                    <h1>guesses</h1>
+                    <p id = "guesses-div"></p>
+                </div>
         </div>
+
+        <hr>
+
+        <div class = "row">
+                <div class = "col-md-12 push">
+                        <h1>letters guessed so far</h1>
+                        <p id = "letterGuesses-div">LetterGuesses</p>
+                        <br>
+                </div>
+        </div>
+        
             
+    </div>
+    <div>
+        <br>
+        <h4 class = "game-title">Zack Germain</h4>
+    
     </div>
 
 

@@ -22,6 +22,7 @@ function pickRandomLetter(){
     randomLetter = letterArray[Math.floor(Math.random()*letterArray.length)];
 };
 
+
 function resetGame(){
     pickRandomLetter();
     guesses = 8;
