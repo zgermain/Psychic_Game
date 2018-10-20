@@ -126,6 +126,21 @@ document.onkeyup = function (event) {
     };
 };
 
+//Mobile keyboard bonus project
+
+function mobileKeyboard(){
+    
+
+    for (i=0; i < letterArray.length; i++){
+        var btn = document.createElement("BUTTON");   
+            btn.className = "mobile-button";
+            btn.id = letterArray[i];     
+        var t = document.createTextNode(letterArray[i]);
+        btn.appendChild(t); 
+        document.body.appendChild(btn);  
+    }
+}
+
 
 //Console Variable Test Function
 function consoleVariables(){

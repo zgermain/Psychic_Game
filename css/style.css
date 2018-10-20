@@ -37,6 +37,15 @@ p{
     text-align: center;
 }
 
+#mobile-keyboard{
+    text-align: center;
+}
+
+#mobile-button{
+    text-align: center;
+    float:center;
+}
+
 @media (max-width: 500px) {
     h1{
         font-size:30px;
